@@ -21,8 +21,8 @@ const add = (a, b) => {
 const multiply = (a, b) => {
   return a * b;
 }
-const greeting = (a, b) => {
-  return 'Hello, Mary Poppins, nice to meet you!';
+function greeting(first, last) {
+  return (`Hello, ${first} ${last}, nice to meet you!`);
 }
 
 /* Step 3: Check your work by un-commenting the followng calls to consume(): */

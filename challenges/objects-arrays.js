@@ -77,10 +77,10 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
-function returnUniversities(graduate) {
-  return graduate.university;
+for (let i = 0; i < graduates.length; i++){
+  universities.push(graduates[i].university)
 }
-console.log(graduates.filter(returnUniversities));
+console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
@@ -138,7 +138,6 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
-
 zooAnimals.map(function(item, animal_name){
   console.log(`${item.animal_name}`.toLowerCase());
 });
